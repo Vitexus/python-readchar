@@ -1,0 +1,26 @@
+Source: python-readchar
+Section: python
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ pybuild-plugin-pyproject,
+ python3-all,
+ python3-setuptools,
+Standards-Version: 4.7.0
+Homepage: https://github.com/magmax/python-readchar
+Vcs-Git: https://github.com/Vitexus/python-readchar.git
+Vcs-Browser: https://github.com/Vitexus/python-readchar
+Rules-Requires-Root: no
+
+Package: python3-readchar
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Description: Library to easily read single chars and key strokes
+ readchar allows you to easily read a character or a key stroke from
+ standard input in a blocking or non-blocking way.
+ .
+ This package provides the Python 3 library.
